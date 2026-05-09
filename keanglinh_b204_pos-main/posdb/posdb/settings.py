@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-4kqawvy$b^$$y&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # Set to True for local development; use environment variable for production
 
-ALLOWED_HOSTS = ['2026b204.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['keanglinh.pythonanywhere.com', 'localhost', '127.0.0.1']
 #ALLOWED_HOSTS = []
 #ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Media files (User uploads)
 MEDIA_URL = 'media/'
@@ -132,8 +133,8 @@ LOGOUT_REDIRECT_URL = '/accounts/login/'   # after logout → back to login page
 #   (log out)  →  /accounts/login/
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://2026b204.pythonanywhere.com',
-    'http://2026b204.pythonanywhere.com',
+    'https://keanglinh.pythonanywhere.com',
+    'http://keanglinh.pythonanywhere.com',
 ]
 
 SECURE_BROWSER_XSS_FILTER = True
